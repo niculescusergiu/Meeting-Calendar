@@ -8,6 +8,21 @@ public class User {
     private String password;
     private boolean expired;
 
+    public User(String username) {
+        this.username = username;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public User(String username, String password, boolean expired) {
+        this.username = username;
+        this.password = password;
+        this.expired = expired;
+    }
+
     public String getUsername() {
         return username;
     }
